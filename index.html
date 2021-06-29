@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="/Assets/style.css" />
+    <link rel="stylesheet" href="Assets/style.css" />
     <title>Quiz</title>
 </head>
+
 <body>
-    <h1>Coding Challenge Quiz</h1>
-    
+
+    <a href="highscores.html">View Highscores</a>
+    <div class="card timer">
+        <div class="timer-text">
+            <div class="large-font timer-count">10</div>
+            <h3>seconds remaining</h3>
+        </div>
+    </div>
+
+    <section id="start-screen">
+        <h1>Coding Challenge Quiz</h1>
+        <button id="startBtn">Start Quiz</button>
+    </section>
+
+    <section id="displayQandA" class="hide">
+        <h1>QUESTION 1</h1>
+        <button id="option1Btn"> OPTION 1</button>
+        <button id="option2Btn"> OPTION 2</button>
+        <button id="option3Btn"> OPTION 3</button>
+        <button id="option4Btn"> OPTION 4</button>
+        <h4 id="ans">Correct/Incorrect ANswer</h4>
+    </section>
+
+    <section id="results" class="hide">
+        <h1>ALL DONE!!!</h1>
+        <p>Your score is : <span id="playerScore">1000</span></p>
+        <button id="scoreBtn"> SUBMIT SCORE</button>
+        
+    </section>
     <!-- JS file  -->
-    <script src= "Assets/script.js"></script>
+    <script src="Assets/script.js"></script>
 </body>
+
 </html>
