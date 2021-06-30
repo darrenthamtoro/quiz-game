@@ -15,7 +15,7 @@
     <a href="highscores.html">View Highscores</a>
     <div class="card timer">
         <div class="timer-text">
-            <div class="large-font timer-count">10</div>
+            <div class="large-font timer-count"></div>
             <h3>seconds remaining</h3>
         </div>
     </div>
@@ -26,17 +26,17 @@
     </section>
 
     <section id="displayQandA" class="hide">
-        <h1>QUESTION 1</h1>
+        <h1 id="question">QUESTION 1</h1>
         <button id="option1Btn"> OPTION 1</button>
         <button id="option2Btn"> OPTION 2</button>
         <button id="option3Btn"> OPTION 3</button>
         <button id="option4Btn"> OPTION 4</button>
-        <h4 id="ans">Correct/Incorrect ANswer</h4>
+        <h4 id="correct-wrong">Correct/Incorrect ANswer</h4>
     </section>
 
     <section id="results" class="hide">
         <h1>ALL DONE!!!</h1>
-        <p>Your score is : <span id="playerScore">1000</span></p>
+        <p>Your score is : <span id="playerScore"></span> / 5</p>
         <button id="scoreBtn"> SUBMIT SCORE</button>
         
     </section>
